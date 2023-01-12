@@ -34,7 +34,7 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
     collectionView.delegate = self
     collectionView.dataSource = self
-        nextBtn.isEnabled = false
+        //nextBtn.isEnabled = false
         nextBtn.backgroundColor = #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 0.05)
         
         slides = [
@@ -56,12 +56,13 @@ class OnboardingViewController: UIViewController {
             controller.modalTransitionStyle = .flipHorizontal
             present(controller, animated: true)
         } else {
-            currentPage += 1
+            pageControl.currentPage += 1
             var indexPath = IndexPath(item: currentPage, section: 0)
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
             collectionView.reloadData()
 
         }
+        print(currentPage)
     }
     
     
