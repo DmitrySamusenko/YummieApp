@@ -21,6 +21,9 @@
 		776130CA296C95F900193ADB /* DishLanscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776130C8296C95F900193ADB /* DishLanscapeCollectionViewCell.xib */; };
 		7787B6ED296315A50090C195 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787B6EC296315A50090C195 /* String+Extension.swift */; };
 		7787B6F029631C180090C195 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787B6EF29631C180090C195 /* CardView.swift */; };
+		77AAF0AF297D720E0030463F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AAF0AE297D720E0030463F /* NetworkService.swift */; };
+		77AAF0B1297D72EB0030463F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AAF0B0297D72EB0030463F /* Route.swift */; };
+		77AAF0B3297D736E0030463F /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AAF0B2297D736E0030463F /* Method.swift */; };
 		77B4653F29708C2100FD1420 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B4653D29708C2100FD1420 /* DishListTableViewCell.swift */; };
 		77B4654029708C2100FD1420 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B4653E29708C2100FD1420 /* DishListTableViewCell.xib */; };
 		77B465432970900200FD1420 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B465422970900200FD1420 /* ListDishesViewController.swift */; };
@@ -55,6 +58,9 @@
 		776130C8296C95F900193ADB /* DishLanscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLanscapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		7787B6EC296315A50090C195 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		7787B6EF29631C180090C195 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		77AAF0AE297D720E0030463F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		77AAF0B0297D72EB0030463F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		77AAF0B2297D736E0030463F /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		77B4653D29708C2100FD1420 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		77B4653E29708C2100FD1420 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		77B465422970900200FD1420 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 		775DD756295CB59600F5C90F /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
+				77AAF0AC297D71E00030463F /* Networking */,
 				775DD773295CC38400F5C90F /* Extension */,
 				775DD76F295CBB9D00F5C90F /* CustomViews */,
 				775DD76E295CBB9600F5C90F /* Views */,
@@ -195,6 +202,16 @@
 				7787B6EF29631C180090C195 /* CardView.swift */,
 			);
 			path = CardView;
+			sourceTree = "<group>";
+		};
+		77AAF0AC297D71E00030463F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				77AAF0AE297D720E0030463F /* NetworkService.swift */,
+				77AAF0B0297D72EB0030463F /* Route.swift */,
+				77AAF0B2297D736E0030463F /* Method.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		77B4653C29708BF800FD1420 /* TableViewCell */ = {
@@ -401,11 +418,14 @@
 				776130C9296C95F900193ADB /* DishLanscapeCollectionViewCell.swift in Sources */,
 				7715466C295D7AE400B6D004 /* OnboardingSlide.swift in Sources */,
 				775DD775295CC3A000F5C90F /* UIView + Extension.swift in Sources */,
+				77AAF0B3297D736E0030463F /* Method.swift in Sources */,
 				775DD758295CB59600F5C90F /* AppDelegate.swift in Sources */,
 				775DD75A295CB59600F5C90F /* SceneDelegate.swift in Sources */,
 				77F97C80296F46C700D809A1 /* DishDetailViewController.swift in Sources */,
 				775DD772295CBBD800F5C90F /* OnboardingViewController.swift in Sources */,
 				77E90A9D2961B5B9009BA256 /* HomeViewController.swift in Sources */,
+				77AAF0B1297D72EB0030463F /* Route.swift in Sources */,
+				77AAF0AF297D720E0030463F /* NetworkService.swift in Sources */,
 				77F4578929630D74004776B9 /* DishCategory.swift in Sources */,
 				7787B6ED296315A50090C195 /* String+Extension.swift in Sources */,
 				7787B6F029631C180090C195 /* CardView.swift in Sources */,

@@ -38,6 +38,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         title = "Yummie"
         registerNibs()
+        let service = NetworkService()
+        let request = service.crateRequest(route: .temp, method: .get, parameters: ["firstName" : "Emmanuel", "lastName": "Okwara"])
+        print("The URL is: \(request?.url)")
     }
     
     private func registerNibs() {
