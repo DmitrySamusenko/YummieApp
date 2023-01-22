@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
     private func registerNibs() {
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         popularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
-        dishLandscapeCollectionView.register(UINib(nibName: DishLanscapeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishLanscapeCollectionViewCell.identifier)
+        dishLandscapeCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
     }
 
 }
@@ -53,7 +53,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         switch collectionView {
         case categoryCollectionView: return categories.count
         case popularCollectionView: return populars.count
-        case dishLandscapeCollectionView: return specials.count
+        case dishLandscapeCollectionView: return categories.count
         default: return 0
         }
     }
@@ -69,8 +69,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.setup(dish: populars[indexPath.row])
             return cell
         case dishLandscapeCollectionView:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLanscapeCollectionViewCell.identifier, for: indexPath) as! DishLanscapeCollectionViewCell
-            cell.setup(dish: specials[indexPath.row])
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
+            cell.setup(category: categories[indexPath.row])
             return cell
         default: return UICollectionViewCell()
         }
